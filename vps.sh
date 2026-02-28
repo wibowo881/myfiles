@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-#sudo apt-get update -y
-#sudo apt-get install -y ufw
+sudo apt-get update -y
+sudo apt-get install -y ufw
 
 ## wget https://raw.githubusercontent.com/lizsvr/XRAY-MULTI/main/setup.sh && chmod +x setup.sh && ./setup.sh
 
@@ -254,6 +254,7 @@ sudo cat <<EOF > /etc/zivpn/config.json
 }
 EOF
 sudo cp /etc/xray/*.pem /etc/zivpn/
+sudo chmod -R 655 /etc/zivpn/*.pem
 
 sudo cat <<EOF > /etc/systemd/system/badvpn-udpgw.service
 [Unit]
