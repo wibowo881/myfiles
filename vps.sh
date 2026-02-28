@@ -6,9 +6,6 @@ sudo apt-get install -y ufw
 
 ## wget https://raw.githubusercontent.com/lizsvr/XRAY-MULTI/main/setup.sh && chmod +x setup.sh && ./setup.sh
 
-sudo rm -rf /root/cert 
-sudo mkdir /root/cert
-
 sudo rm -rf /etc/zivpn 
 sudo mkdir /etc/zivpn
 
